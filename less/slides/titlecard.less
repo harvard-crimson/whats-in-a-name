@@ -1,0 +1,66 @@
+//titlecard
+.titlecard {
+
+     .timeline-wrapper{
+        width: 70%;
+        margin: auto;
+        @media @screen-small{
+            width: 100%;
+        }
+        }
+     
+     .subhed {
+        text-align: center;
+        text-transform: uppercase;
+        color: @primary;
+        font-size: 18px;
+        margin: 10px 0;
+        
+        @media @screen-small-above {
+            margin: 25px 0;
+            font-size: 30px;
+        }
+
+        @media @screen-large-above {
+            margin: 25px 0;
+            font-size: 40px;
+        }
+
+        .numeral {
+            font-size: 30px;
+            
+            @media @screen-small-above {
+                font-size: 50px;
+            }
+        }
+     }
+
+     .description {
+        font-family: Georgia;
+        margin: 0 auto;
+        max-width: 800px;
+        font-size: 14px;
+        line-height: 1.3em;
+
+        @media @screen-small-above {
+            font-size: 14px;
+        }
+
+        @media @screen-large-above {
+            font-size: 15px;
+        }
+    }
+
+    .exhibit {
+        margin: 15px auto 0 auto;
+
+        @media @screen-small-above {
+            margin-top: 30px;
+        }
+
+        .graphic-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    }
+}

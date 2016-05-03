@@ -1,0 +1,112 @@
+//grid
+.grid {
+    .main-q {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-style: italic;
+
+        @media @screen-small-above {
+            font-size: 18px;
+        }
+    }
+
+    .container {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        width: 100%;
+
+        .description {
+            margin: 0 auto;
+            max-width: 600px;
+            font-size: 14px;
+            line-height: 1.3em;
+            text-align: center;
+            @media @screen-small-above {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .head-grid {
+        width: 100%;
+        max-width: 850px;
+        margin: 20px auto 0 auto;
+
+        @media @screen-small-above {
+            margin-top: 30px;
+        }
+    }
+
+    .row {
+        clear: both;
+        margin: 0 auto;
+        text-align: center;
+    }
+     
+     .img-box {
+        display: inline-block;
+        width: 100%;
+        height: 10%;
+        margin: 10px 0;
+        position: relative;
+        z-index: 1000;
+        opacity: 0.5;
+        .transition(opacity 0.1s linear);
+
+        @media @screen-small-above {
+            width: 16%;
+            height: 16%;
+            margin: 25px 4%;
+        }
+        
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &.playing {
+            opacity: 1;
+
+            @media @screen-small-above {
+                outline: 1px solid @primary;
+            }
+
+            @media @screen-small {
+                .name {
+                    border-bottom: 1px solid @primary;
+                }
+            }
+        }
+
+        .headshot {
+            width: 100%;
+
+            @media @screen-small {
+                display: none;
+            }
+        }
+
+        .name {
+            text-align: center;
+            color: @grey;
+            font-family: Helvetica;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            @media @screen-small-above {
+                position: absolute;
+                top: -18px;
+                left: -25%;
+                width: 150%;
+                font-size: 12px;
+            }
+        }
+
+     }
+
+
+}

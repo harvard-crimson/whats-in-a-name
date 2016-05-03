@@ -1,0 +1,131 @@
+.start {
+    .full-block {
+
+
+            
+        &:after {
+            display: block;
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            z-index: -2;
+        }
+        
+        .full-block-cell {
+        text-align: center;
+        color: #fff;
+        vertical-align: middle;
+
+
+        .row{
+            background: @darker-overlay;
+            width: 70%;
+            float: right;
+
+
+            @media @screen-small {
+                width: 100%;
+                float: center;
+            }
+        }
+        .logo {
+            width: 200px;
+
+            @media @screen-medium-above {
+                width: 300px;
+            }
+        }
+
+         h1 {
+             font-size: 45px;
+             font-family: "Crimson", Georgia, serif;
+             text-transform: uppercase;
+             //font-weight: bold;
+             margin: 15px 0 0 0;
+            
+            @media @screen-small-above {
+                 font-size: 56px;
+            }
+            
+            @media @screen-medium-above {
+                 font-size: 77px;
+            }
+         }
+
+         h2 {
+            font-size: 15px;
+            font-weight: normal;
+            max-width: 600px;
+            margin: 5px auto;
+            
+            @media @screen-tiny-above {
+               max-width: none;
+            }
+
+            p:first-child {
+                margin: 20px 0;
+            }
+
+            @media @screen-small-above {
+                font-size: 18px;
+            }
+            
+            @media @screen-medium-above {
+                 font-size: 24px;
+            }
+        }
+
+        h3 {
+            padding: 5vh 0;
+            font-size: 14px;
+            margin: 0;
+
+            @media @screen-small-above {
+                font-size: 16px;
+            }
+        }
+
+        h4 {
+            font-size: 14px;
+            margin: 5px 0 0 0;
+            @media @screen-small-above {
+                font-size: 16px;
+                margin: 10px 0 0 0;
+            }
+        }
+
+        a {
+            color: @light-primary;
+        }
+        
+        .sound-prompt {
+            /* border: 1px solid @light-primary; */
+            font-style: italic;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 13px;
+            margin: 10px auto;
+
+            @media @screen-small-above {
+                padding: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+        .full-block-header{
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            background-color: #a70500 ;
+            padding: 40px 40px;
+            z-index: 10;
+            font-size: 2em;
+
+        }
+    }
+}

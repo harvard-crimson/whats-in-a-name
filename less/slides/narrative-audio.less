@@ -1,0 +1,44 @@
+.narrative-header {
+    margin-top: 10px;
+
+    .info-person {
+        margin: 0 auto;
+        max-width: 700px;
+        text-align: center;
+
+
+        @media @screen-small-above {
+            margin: 10px auto;
+        }
+
+        span {
+            display: block;
+
+            @media @screen-small-above {
+                display: inline;
+            }
+        }
+        .info-note{
+            font-size: 0.9em;
+            padding-top: 10px;
+            color: #777777;
+        }
+        .name {
+            font-size: 22px;
+            @media @screen-small-above {
+                font-size: 30px;
+            }
+        }
+        
+        .title {
+            color: @grey;
+            font-size: 14px;
+            margin-top: -10px;
+
+            @media @screen-small-above {
+                font-size: 18px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,40 @@
+{% extends '_base.html' %}
+
+{% block title %}What's in a name? | The Harvard Crimson{% endblock %}
+
+{% block content %}
+
+<div class="section">
+{% include 'slides/start.html' %}
+
+{% include 'slides/intro-house-master.html' %}
+{% include 'slides/out-of-state.html' %}
+{% include 'slides/khurana-history.html' %}
+{% include 'slides/rosengarten-name.html' %}
+{% include 'slides/mansfield-weakness.html' %}
+
+{% include 'slides/intro-law-seal.html' %}
+{% include 'slides/faust-shield.html' %}
+{% include 'slides/clayborne-celebration.html' %}
+{% include 'slides/mann-seal.html' %}
+{% include 'slides/kreiger-symbol.html' %}
+{% include 'slides/coquillette-royall.html' %}
+
+{% include 'slides/concluding-thoughts.html' %}
+{% include 'slides/faust-conclusion.html' %}
+{% include 'slides/khurana-portraits.html' %}
+</div>
+
+<div class="primary-navigation" style="opacity:1;">
+    <div class="controlArrow prev"></div>
+    <div class="controlArrow next"></div>
+</div>
+
+<div id="narrative-player"></div>
+<div id="ambient-player"></div>
+
+<div class="progress-indicator">
+    <div class="current-progress"></div>
+</div>
+
+{% endblock %}

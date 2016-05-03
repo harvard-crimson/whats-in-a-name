@@ -1,0 +1,9 @@
+{% extends '_slide.html' %}
+
+{% block extra_class %}intro{% endblock %}
+{% block slide_content %}
+    <p class="subhed">
+      {% block subhed %}{% endblock %}</p>
+    <div class="title">{% block title %}{% endblock %}</div>
+    <p class="description">{% block description %}{% endblock %}</p>
+{% endblock %}

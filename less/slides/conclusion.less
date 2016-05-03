@@ -1,0 +1,66 @@
+.conclusion {
+
+    .full-block {
+        background: @darker-overlay;
+        color: #fff;
+
+        .mini-nav a.link {
+            color: @light-primary;
+        }
+        
+        .full-block-cell {
+            vertical-align: middle;
+        }
+
+        .full-block-content {
+            text-align: center;
+            max-width: 600px;
+            width: 70%;
+            margin: 0 auto;
+            padding: 15px 15px;
+            background: rgba(0,0,0,0.5);
+    
+            @media @screen-small-above {
+                border: 1px solid @light-primary;
+                padding-top: 0;
+            }
+
+            p {
+                font-size: 14px;
+
+                @media @screen-tiny-above {
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                color: @light-primary;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .social-wrapper {
+                margin: 0 auto;
+                clear: both;
+                padding-top: 30px;
+
+                .social a {
+                    color: #fff;
+                    font-size: 30px;
+                    width: 50px;
+
+                    &:hover {
+                        color: @light-primary;
+                    }
+                }
+            }
+
+            .remarks {
+                clear: both;
+            }
+        }
+    }
+
+}

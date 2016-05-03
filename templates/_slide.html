@@ -1,0 +1,44 @@
+{% block slide_wrapper %}
+<div class="slide {% block extra_class %}{% endblock %}" data-narrative="{% block narrative %}{% endblock %}" data-bgimage="{% block bgimage %}{% endblock %}">
+    {% block slide_body %}
+    <div class="text full-block">
+        <div class="full-block-cell">
+            <div class="full-block-header-container">
+            <div class="full-block-header">
+                    The Harvard Crimson
+                </div>
+            <div class="mini-nav">
+                    <div class="bar-nav">
+                        <ul>
+                            <li class="nav-item-active">{% block section_link %}{% endblock %}</li></a>
+                            <a href="#1"><li class="nav-item" id="nav1">What's in a name?</li></a>
+                            <a href="#2"><li class="nav-item" id="nav2">House Master</li></a>
+                            <a href="#6"><li class="nav-item" id="nav3">Law School Crest</li></a>
+                            <a href="#12" ><li class="nav-item" id="nav4">Conclusion</li></a>
+                        </ul>
+                    <!-- <a class="link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span> The Public Trust</a> <i class="fa fa-angle-right"></i> 
+                      <ul class="dropdown-menu">
+                        <li><a href="#1">Introduction</a></li>
+                        <li><a href="#2">State funding</a></li>
+                        <li><a href="#6">Tuition</a></li>
+                        <li><a href="#10">Out-of-state</a></li>
+                        <li><a href="#13">Access &amp; Equity</a></li>
+                        <li><a href="#17">Philanthropy</a></li>
+                        <li><a href="#21">Private research</a></li>
+                        <li><a href="#24">Conclusion</a></li>
+                      </ul> -->
+                    </div>
+            </div>
+        </div>
+            <div class="full-block-content">
+                {% block slide_content %}{% endblock slide_content %}
+            </div><!--full-block-content-->
+                <div class="credit">
+                    {% block credit %}
+                    {% endblock credit %}
+                </div>
+        </div><!--full-block-cell-->
+    </div><!--full-block-->
+    {% endblock slide_body %}
+</div><!--slide-->
+{% endblock slide_wrapper %}
